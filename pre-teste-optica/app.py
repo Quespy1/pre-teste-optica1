@@ -1,9 +1,8 @@
-
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///respostas.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://respostas_optica_user:KrYB0q6DcNFu4lCrx2t2wmnYL4Kh4RBO@dpg-d0hmj7buibrs739t58i0-a/respostas_optica'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
